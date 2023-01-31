@@ -1,0 +1,23 @@
+<section>
+    <div class="container mt-4">
+        <div class="d-flex justify-content-center align-items-center">
+            <small class="text-danger">CREATE STUDENT</small>
+        </div>
+        <hr>
+    </div>
+    <div class="container mt-2">
+        <div class="d-flex justify-content-center align-items-center">
+            <form [formGroup]="studentForm" (ngSubmit)="onSubmit(studentForm)">
+                <div class="form-group d-flex justify-content-center align-items-center">
+                  <input style="width:18rem" type="text" formControlName="name" id="exampleInputEmail1"  placeholder="Enter name">
+                </div>
+                <div class="form-group d-flex justify-content-center align-items-center">
+                  <input style="width:18rem" type="text" formControlName="department" id="exampleInputPassword1" placeholder="department">
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+        </div>
+    </div>
+</section>
